@@ -1,0 +1,68 @@
+.header_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color: #f8f8f8;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.848);
+    border-radius: 50px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.8px);
+    -webkit-backdrop-filter: blur(11.8px);
+    border: 1px solid rgba(0, 0, 0, 0.417);
+    width: 55%;
+    font-family: "Instrument Serif", serif;
+}
+
+.header_main_section_1 {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+}
+
+.header_main_section_1 img {
+    width: 65px;
+    height: 65px;
+    margin-top: 4px;
+}
+
+.header_main_section_2 {
+    display: flex;
+    align-items: center;
+}
+
+.header_main_section_2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    margin: 0px 15px;
+}
+
+.header_main_section_3 {
+    display: flex;
+    align-items: center;
+}
+
+.header_main_section_3 button {
+    padding: 18px 20px;
+    color: Black;
+    border-radius: 5px;
+    margin-right: 6px;
+    font-size: 18px;
+    background: #c7e3ffef;
+    border-radius: 50px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.8px);
+    -webkit-backdrop-filter: blur(11.8px);
+    border: 1px solid rgba(0, 0, 0, 0.417);
+    font-family: "Instrument Serif", serif;
+}
+
+.header_main_startnowBt a {
+    color: white;
+    text-decoration: none;
+}

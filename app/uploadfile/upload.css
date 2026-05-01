@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
+
+.upload-page-shell {
+    min-height: 100vh;
+    padding: 24px 20px 72px;
+    background: linear-gradient(360deg, rgba(255, 255, 255, 1) 0%, rgba(199, 227, 255, 1) 100%);
+    color: #111111;
+}
+
+.upload-page-content {
+    width: min(1180px, 100%);
+    margin: 0 auto;
+    font-family: "Instrument Serif", serif;
+}
+
+.upload-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 58px;
+    padding: 0 28px;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    font-family: "Instrument Serif", serif;
+    font-size: 1.1rem;
+    color: #111111;
+    background: rgba(255, 255, 255, 0.72);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    cursor: pointer;
+}
+
+.upload-pill--primary {
+    color: #ffffff;
+    background: #449df4;
+    border-color: #188bff;
+    box-shadow: 0 6px 10px 0 rgba(130, 193, 255, 0.69);
+}
+
+.upload-pill--primary:hover {
+    background: #188bff;
+}
+
+.upload-pill:disabled {
+    cursor: wait;
+    opacity: 0.75;
+}
+
+.upload-stage {
+    display: flex;
+    grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+    gap: 28px;
+    align-items: start;
+    flex-direction: column;
+    /* background-color: red; */
+}
+
+.upload-stage__left,
+.upload-stage__right {
+    border-radius: 34px;
+    background: rgba(255, 255, 255, 0.58);
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    box-shadow: 0 12px 40px rgba(138, 171, 210, 0.16);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.upload-stage__left {
+    padding: 24px;
+    width: 100%;
+}
+
+.upload-stage__right {
+    padding: 28px;
+}
+
+.dropzone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
+    padding: 32px 26px;
+    border-radius: 30px;
+    border: 1.5px dashed rgba(68, 157, 244, 0.55);
+    background: rgba(255, 255, 255, 0.66);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.dropzone:hover,
+.dropzone--active {
+    transform: translateY(-2px);
+    border-color: #188bff;
+    box-shadow: 0 16px 34px rgba(130, 193, 255, 0.26);
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.dropzone__badge,
+.upload-section-label {
+    width: fit-content;
+    padding: 7px 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(68, 156, 244, 0.34);
+    color: #449df4;
+    background: rgba(228, 241, 249, 0.88);
+    font-size: 0.98rem;
+}
+
+.dropzone h2,
+.upload-panel-title {
+    margin: 22px 0 0;
+    font-size: clamp(2rem, 3vw, 2.7rem);
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.dropzone p,
+.upload-panel-copy {
+    margin: 16px 0 0;
+    font-size: 1.14rem;
+    line-height: 1.6;
+    color: rgba(17, 17, 17, 0.72);
+}
+
+.upload-error {
+    margin: 14px 4px 0;
+    color: #cc4b4b;
+    font-size: 1rem;
+}
+
+.upload-details {
+    margin-top: 22px;
+}
+
+.upload-details__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 14px;
+}
+
+.upload-details__card {
+    padding: 18px;
+    border-radius: 22px;
+    border: 1px solid rgba(68, 156, 244, 0.14);
+    background: rgba(255, 255, 255, 0.82);
+}
+
+.upload-details__card span {
+    display: block;
+    margin-bottom: 10px;
+    color: rgba(17, 17, 17, 0.55);
+    font-size: 0.96rem;
+}
+
+.upload-details__card strong {
+    display: block;
+    font-size: 1.08rem;
+    font-weight: 400;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+.upload-clear-button {
+    margin-top: 14px;
+    border: none;
+    background: transparent;
+    color: #0f62c9;
+    font-family: "Instrument Serif", serif;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+.user-info-grid {
+    display: grid;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.field {
+    display: grid;
+    gap: 8px;
+}
+
+.field span {
+    font-size: 1rem;
+}
+
+.field input {
+    width: 100%;
+    padding: 16px 18px;
+    border-radius: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    background: rgba(255, 255, 255, 0.9);
+    font-family: "Instrument Serif", serif;
+    font-size: 1.05rem;
+    color: #111111;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.field input:focus {
+    outline: none;
+    border-color: #449df4;
+    box-shadow: 0 0 0 4px rgba(130, 193, 255, 0.2);
+}
+
+.upload-price-card {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 28px;
+    padding: 24px;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.84);
+    border: 1px solid rgba(68, 156, 244, 0.18);
+}
+
+.upload-price-card__label,
+.upload-price-card__caption {
+    margin: 0;
+}
+
+.upload-price-card__label {
+    color: rgba(17, 17, 17, 0.55);
+    font-size: 0.98rem;
+}
+
+.upload-price-card h3 {
+    margin: 8px 0;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.upload-price-card__caption {
+    color: rgba(17, 17, 17, 0.65);
+    font-size: 1rem;
+}
+
+
+@media (max-width: 980px) {
+
+    .upload-topbar,
+    .upload-stage {
+        width: 100%;
+    }
+
+    .upload-stage {
+        grid-template-columns: 1fr;
+    }
+
+    .upload-details__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 720px) {
+    .upload-page-shell {
+        padding: 16px 14px 48px;
+    }
+
+    .upload-topbar {
+        flex-direction: column;
+        border-radius: 32px;
+        padding: 14px;
+        margin-bottom: 40px;
+    }
+
+    .upload-topbar__actions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .upload-pill,
+    .upload-pill--nav {
+        width: 100%;
+        justify-content: center;
+        min-height: 54px;
+    }
+
+    .upload-hero-copy p {
+        font-size: 1.12rem;
+    }
+
+    .upload-stage__left,
+    .upload-stage__right {
+        padding: 18px;
+        border-radius: 24px;
+    }
+
+    .dropzone {
+        min-height: 260px;
+        padding: 26px 18px;
+        border-radius: 24px;
+    }
+
+    .upload-price-card h3 {
+        font-size: 2.4rem;
+    }
+}
