@@ -16,14 +16,3 @@ By transforming hours of raw conversation into organized, prioritized to-do list
 - **👥 Accountability Mapping:** Intelligently assign extracted tasks to specific meeting participants based on verbal commitments or context.
 - **📊 Collaborative Dashboard:** A modern UI to view, organize, track, and export your team's generated to-do lists and meeting histories.
 
-## 🏗️ Architectural Vision
-
-MeetWise is conceptualized around a modular, three-tiered architecture:
-
-┌──────────────────┐      ┌──────────────────────────┐       ┌──────────────────────┐
-│                  │      │  AI Processing Pipeline  │       │                      │
-│  Modern Frontend │ ───> │  - Transcription Engine  │ ───>  │  Persistent Storage  │
-│ (React / Next.js)│ <─── │  - NLP Insights Extractor│ <───  │  (Database / Cloud)  │
-│                  │      │  - Task Parser Module    │       │                      │
-└──────────────────┘      └──────────────────────────┘       └──────────────────────┘
-
